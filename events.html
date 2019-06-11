@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<p id="display-date"></p>
+	<h1 onmouseenter="mouseEntered()">Mouse Event</h1>
+	<p id="mouse-event"></p>
+	<button onclick="displayDate()">Click here to get the data.</button>
+	<script type="text/javascript">
+		function displayDate() 
+		{
+			// body...
+			document.getElementById('display-date').innerHTML=Date();
+		}
+		function mouseEntered()
+		{
+			document.getElementById('mouse-event').innerHTML=Date();
+		}
+	</script>
+	
+	
+</body>
+</html>

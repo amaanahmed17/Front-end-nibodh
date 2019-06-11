@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="head1">This is Head1</h1>
+	<h2 class="head2">This is another head</h2>
+	<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<hr>
+	<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<ul>
+		<li>Sleep</li>
+		<li>Sleep</li>
+		<li>Sleep</li>
+	</ul>
+	<script type="text/javascript">
+		var head=document.getElementById('head1');
+		console.log(head);
+		var classes=document.getElementsByClassName('para');
+		console.log(classes);
+		console.log(classes[0]);
+		classes[0].innerHTML='New Paragraph';
+		var tags=document.getElementsByTagName('li');
+		console.log(tags);
+		tags[0].innerHTML="Eat";
+		tags[1].innerHTML="Sleep";
+		tags[2].innerHTML="Code";
+		head.style.backgroundColor='aqua';
+		head.style.Color='red';
+
+	</script>
+
+</body>
+</html>
